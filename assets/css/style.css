@@ -25,8 +25,8 @@
     --icon-color:#56575A;
 }
 
-html[data-theme='light'] .brand__logo {
-    filter: :invert(1);
+html[data-theme='dark'] .brand__logo {
+    filter:invert(1);
 }
 
 * {
@@ -59,6 +59,12 @@ h1 {
     font-size: 2.5rem;
 }
 
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 h1, h2, h3 {
     font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
@@ -79,6 +85,7 @@ p {
     justify-content: space-between;
     align-items: center;
     padding:  0.5rem 1rem;
+    width: 100%;
 }
 
 .header__toggle {
@@ -163,8 +170,10 @@ p {
     width: 100%;
     background: transparent;
     border-radius: 3.125rem;
+    border: none;
     padding: 0.875rem 1.5rem;
     cursor: pointer;
+    color: var(--icon-color);
 }
 
 .btn span, .btn i {
@@ -183,6 +192,10 @@ p {
 .btn:hover {
     transform: scale(1.05);
     transition: ease-in-out .3s;
+}
+
+main, .projects {
+    padding: 2.5rem 1rem;
 }
 
 main {
@@ -243,6 +256,94 @@ main {
     width: 4rem;
 }
 
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects__card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card__cover {
+    width: 100%;
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.card__title {
+    font-size: 1.5rem;
+}
+
+.card__description {
+    font-size: 1rem;
+    color: var(--title-color);
+}
+
+.card__list {
+    margin-left: 1rem;
+}
+
+.card__item {
+    list-style: disc;
+}
+
+.card__buttons {
+    display: flex;
+
+}
+
+.about__content2, col1, .row1,
+.about__content2, col1, .row2 {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+#accordion {
+    border-radius: .5rem;
+    border: 1px solid var(--primary-bg-color);
+}
+
+.accordion__header {
+    width: 100%;
+    display: flex;
+    padding: 0.75rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--secondary-bg-color);
+    border: 1px solid var(--border-color);
+}
+
+.accordion__header span {
+    color: var(--title-color);
+    font-size: 1.15rem;
+}
+
+.accordion__body {
+    display: none;
+    padding: 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    /* gap: 0.625rem; */
+    
+}
+
+.accordion__item.active .accordion__body {
+    display: flex;
+}
+.accordion__item.active .bi-caret-down {
+    transform: rotate(180deg);
+}
+
 footer {
     margin-bottom: 5rem;
 }
@@ -280,7 +381,12 @@ footer p {
         font-size: 4rem;
     }
 
-    main {
+    h2 {
+        font-size: 3rem;
+        letter-spacing: 0.4rem;
+    }
+
+    main, .projects {
         padding: 8rem 6rem 4rem 6rem;
     }
 
@@ -303,6 +409,10 @@ footer p {
 @media (min-width:1200px) {
     main {
         padding: 12rem 6rem 2rem;
+    }
+
+    h2 {
+        font-size: 5rem;
     }
 
     .main__content1 .btn {
@@ -329,11 +439,56 @@ footer p {
         height: 6rem;
 
     }
+
+    .projects__card {
+        flex-direction: row;
+    }
+
+    .card__cover {
+        width: 50%;
+    }
+
+    .about {
+        gap: 5rem;
+    }
+
+    .about__content1, .about__content2 {
+        display: grid;
+        grid-template-columns: 34% 60%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 4rem;
+    }
+
+    .about__description h2 {
+        text-align: left;
+    }
+
+    .description__buttons {
+        justify-content: flex-start;
+    }
+
+    .card__title {
+        font-size: 3.25rem;
+    }
+
+    .card__description, .card__item {
+        font-size: 1.25rem;
+    }
+
+    .card__buttons .btn {
+        width: auto;
+    }
+
 }
 
 @media (min-width: 1400px) {
     h1 {
         font-size: 6.25rem;
+    }
+
+    h2 {
+        font-size: 5rem;
     }
 
     p {

@@ -1,150 +1,348 @@
 <!DOCTYPE html>
-<html lang="pt-BR" data-theme="dark">
+<html lang="pt-br" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maria Eduarda Portifólio</title>
-    <meta name="description" content="Portifólio da desenvolvedora front-end Maria Eduarda para compartilhar projetos e habilidades desenvolvidas.">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maria Eduarda - Portifólio</title>
+  <meta name="description" content="Portifólio front-end Maria Eduarda com objetivo de compartilhar projetos e habilidades desenvolvidas."/>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
 </head>
 <body>
+
     <header class="header">
+
         <nav class="header__nav">
             <ul class="menu menu--principal">
                 <li class="menu__item">
-                    <a class="menu__link" href="#home"></a>
-                    <span class="menu__text">Home</span>
+                <a class="menu__link active" href="#home"></a>
+                <span class="menu__text">Home</span>
                 </li>
 
                 <li class="menu__item">
-                    <a class="menu__link active" href="#projetos"></a>
-                    <span class="menu__text">Projetos</span>
+                <a class="menu__link" href="#projetos"></a>
+                <span class="menu__text">Projetos</span>
                 </li>
 
                 <li class="menu__item">
-                    <a class="menu__link" href="#sobre"></a>
-                    <span class="menu__text">Sobre</span>
+                <a class="menu__link" href="#sobre"></a>
+                <span class="menu__text">Sobre</span>
                 </li>
 
                 <li class="menu__item">
-                    <a class="menu__link" href="#contato"></a>
-                    <span class="menu__text">Contato</span>
+                <a class="menu__link" href="#contato"></a>
+                <span class="menu__text">Contato</span>
                 </li>
-
-                
             </ul>
         </nav>
 
         <div class="header__brand">
-            <img  class="brand__logo" src="/assets/images/logo.png" alt="LOGO M.E">
+            <img class="brand__logo" src="/assets/images/logo.png" alt="logo m.e" />
         </div>
-    
+
         <div class="header__toggle">
             <i id="toggleTheme" class="bi bi-sun"></i>
         </div>
-        
     </header>
-
+ 
     <nav class="nav--mobile">
         <ul class="menu menu--mobile">
             <li class="menu__item">
-                <a class="menu__link" href="#home">
-                    <i class="menu__icon bi-house-fill"></i>
+                <a class="menu__link active" href="#home">
+                <i class="menu__icon bi-house-fill"></i>
                 </a>
                 <span class="menu__text">Home</span>
             </li>
 
             <li class="menu__item">
-                <a class="menu__link active" href="#projetos">
-                   <i class="menu__icon bi bi-window"></i>
+                <a class="menu__link" href="#projetos">
+                <i class="menu__icon bi bi-window"></i>
                 </a>
                 <span class="menu__text">Projetos</span>
             </li>
 
             <li class="menu__item">
                 <a class="menu__link" href="#sobre">
-                    <i class="menu__icon bi bi-file-person"></i>
+                <i class="menu__icon bi bi-file-person"></i>
                 </a>
                 <span class="menu__text">Sobre</span>
             </li>
 
             <li class="menu__item">
                 <a class="menu__link" href="#contato">
-                    <i class="menu__icon bi bi-envelope-at"></i>
+                <i class="menu__icon bi bi-envelope-at"></i>
                 </a>
                 <span class="menu__text">Contato</span>
             </li>
-
-            
         </ul>
     </nav>
 
     <main>
-        <div class="main__content1">
-            <h1>Soluções Criativas & Desenvolvimento Front-end </h1>
-            <p>Maria Eduarda, Ponta de Pedras - PA, Desenvolvedora Web Júnior</p>
 
-            <ul class="menu--social">
+        <section id="home" class="main__hero">
+            <div class="main__content1">
+                <h1>Desenvolvimento Front-end</h1>
+                <p>Maria Eduarda Ferreira Barbosa, Ponta de Pedras - PA, Desenvolvedora Front-end Júnior, Estudante de Análise e Desenvolvimento de Sistemas</p>
+
+                <ul class="menu--social">
                 <li>
                     <a class="menu__link" href="">
-                       <i class="menu__icon bi bi-github"></i>
+                        <i class="menu__icon bi bi-github"></i>
                     </a>
                 </li>
-            </ul>
-            <ul>
                 <li>
                     <a class="menu__link" href="">
-                       <i class="menu__icon bi bi-linkedin"></i>
+                        <i class="menu__icon bi bi-linkedin"></i>
                     </a>
                 </li>
-            </ul>
-            <ul>
                 <li>
                     <a class="menu__link" href="">
-                       <i class="menu__icon bi bi-instagram"></i>
+                        <i class="menu__icon bi bi-instagram"></i>
                     </a>
                 </li>
-            </ul>
+                </ul>
 
-            <button class="btn btn--primary">
-                <span>Ver Projetos</span>
-                <i class="bi bi-distribute-vertical"></i>
-            </button>
-        </div>
+                <!-- <button class="btn btn--primary" onclick="location.href='#projetos'">
+                    <span>Visualizar Projetos</span>
+                    <i class="bi bi-distribute-vertical"></i>
+                </button> -->
+            </div>
+        </section>
 
-        <div class="main__content2">
-            <iframe width="853" height="480" src="https://www.youtube.com/embed/hmiRNUzAlJA" title="Girls In The House - 4.10 - Open The Door (Season Finale)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        
-        <section class="skills">
-            <h2>Principais tecnologias</h2>
+        <section id="sobre" class="about" aria-labelledby="about-title">
+            <div class="about__content1">
+                <img src="/assets/images/me.jpg" alt="Maria Eduarda" class="about__photo"/>
+
+                <div class="about__description">
+                    <h2 id="about-title">Sobre Mim</h2>
+                    <p><strong>Maria Eduarda Ferreira Barbosa</strong> — estudante de <em>Análise e Desenvolvimento de Sistemas</em>, atualmente no semestre final. Em transição para área de Front-End e interessada também em Java.</p>
+
+                    <div class="about__icons">
+                        <i class="bi bi-javascript"></i>
+                        <span>JavaScript: Básico</span>
+                        <i class="bi bi-filetype-java"></i>
+                        <span>Java: Intermediário</span>
+                        <i class="bi bi-translate"></i>
+                        <span>Inglês: Básico</span>
+                        <i class="bi bi-pc-display-horizontal"></i>
+                        <span>Informática: Avançada</span>
+                    </div>
+
+                    <div class="descrition__buttons">
+                        <a href="#" title="Currículo">
+                            <button class="btn btn--primary"><span>Currículo</span><i class="bi bi-link-45deg"></i></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about__content2">
+                <div class="col1">
+                    <div class="row1">
+                        <h3>Formação</h3>
+                        <h4>Análise e Desenvolvimento de Sistemas</h4>
+                        <span>08/2023 - Atualmente</span>
+                        <div class="about__icons"><i class="bi bi-building"></i><span>Faculdade: Anhanguera Educacional</span></div>
+                    </div>
+
+                    <div class="row2">
+                        <h3>Experiências</h3>
+                        <h4>Projetos acadêmicos e pessoais</h4>
+                        <p>Atuação em projetos voltados para front-end, integração com APIs e desenvolvimento em Java. Participação em desafios e cursos.</p>
+                        <ul>
+                            <li class="about__item">Projeto X — descrição breve</li>
+                            <li class="about__item">Projeto Y — descrição breve</li>
+                            <li class="about__item">Projeto Z — descrição breve</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col2">
+                    <h3>Cursos</h3>
+                    <div id="accordion">
+                        <div class="accordion__item active">
+                            <button class="accordion__header">Front-end <i class="bi bi-caret-down"></i></button>
+                            <div class="accordion__body">
+                                <p>Curso de Front-end com HTML, CSS e JavaScript. (detalhes...)</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <button class="accordion__header">Java / POO <i class="bi bi-caret-down"></i></button>
+                            <div class="accordion__body">
+                                <p>Curso de Java com foco em Programação Orientada a Objetos</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <button class="accordion__header">Angular <i class="bi bi-caret-down"></i></button>
+                            <div class="accordion__body">
+                                <p>Curso de Java com foco em Programação Orientada a Objetos</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <button class="accordion__header">Outros Cursos <i class="bi bi-caret-down"></i></button>
+                            <div class="accordion__body">
+                                <p>Lista de cursos e certificações (Git, GitHub, Bootcamps, etc.).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" aria-labelledby="skills-title">
+            <h2 id="skills-title">Principais tecnologias</h2>
             <ul class="skills__list">
-                <li class="skills__item">
-                    <img class="skills__logo" src="/assets/skills/java.svg" alt="">
+                <li class="skills__item"><img class="skills__logo" src="/assets/skills/java.svg" alt="Java"></li>
+                <li class="skills__item"><img class="skills__logo" src="/assets/skills/html.svg" alt="HTML5"></li>
+                <li class="skills__item"><img class="skills__logo" src="/assets/skills/css3.svg" alt="CSS3"></li>
+                <li class="skills__item"><img class="skills__logo" src="/assets/skills/javascript.svg" alt="JavaScript"></li>
+            </ul>
+        </section>
+    
+        <section id="projetos" class="projects" aria-labelledby="projects-title">
+            <h2 id="projects-title">Projetos</h2>
+
+            <div class="projects__container">
+                <div class="projects__card">
+                    <img class="card__cover" src="/assets/images/project-placeholder.png" alt="Prévia do projeto">
+                    <div class="card__body">
+                        <h3 class="card__title">Título do Projeto</h3>
+                        <p class="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis tempora esse suscipit sapiente laudantium...</p>
+                        <ul>
+                            <li>Funcionalidade 1</li>
+                        </ul>
+
+                        <ul class="skills__list">
+                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/java.svg" alt="Java"></li>
+                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/html.svg" alt="HTML"></li>
+                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/css3.svg" alt="CSS"></li>
+                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/javascript.svg" alt="JS"></li>
+                        </ul>
+
+                        <div class="card__buttons">
+                            <a class="btn btn--primary" href="#"><span>Prévia</span><i class="bi bi-menu-button-wide"></i></a>
+                            <a class="btn" href="#"><span>Repositório</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects__card">
+                    <img class="card__cover" src="/assets/images/nlw-preview.png" alt="NLW Agents - Assistente IA">
+                    <div class="card__body">
+                        <h3 class="card__title">NLW Agents - Assistente IA</h3>
+                        <p class="card__description">Assistente IA desenvolvido como desafio, integrando front-end e APIs de IA para protótipos.</p>
+                        <ul>
+                            <li>Interface responsiva</li>
+                            <li>Integração com API de IA</li>
+                            <li>Deploy em ambiente público</li>
+                        </ul>
+
+                        <ul class="skills__list">
+                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/html.svg" alt="HTML"></li>
+                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/css3.svg" alt="CSS"></li>
+                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/javascript.svg" alt="JS"></li>
+                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/ai.svg" alt="IA"></li>
+                        </ul>
+
+                        <div class="card__buttons">
+                            <a class="btn btn--primary" href="#"><span>Prévia</span><i class="bi bi-menu-button-wide"></i></a>
+                            <a class="btn" href="#"><span>Repositório</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects__card">
+                    <img class="card__cover" src="/assets/images/sudoku-preview.png" alt="Sudoku - Java">
+                    <div class="card__body">
+                        <h3 class="card__title">Sudoku (Java)</h3>
+                        <p class="card__description">Jogo de Sudoku desenvolvido em Java com foco em POO e lógica de resolução.</p>
+                        <ul>
+                            <li>POO em Java</li>
+                            <li>Validações e geração de tabuleiros</li>
+                            <li>Execução via terminal</li>
+                        </ul>
+
+                        <ul class="skills__list">
+                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/java.svg" alt="Java"></li>
+                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/spring.svg" alt="Spring (quando aplicável)"></li>
+                        </ul>
+
+                        <div class="card__buttons">
+                            <a class="btn btn--primary" href="#"><span>Prévia</span><i class="bi bi-menu-button-wide"></i></a>
+                            <a class="btn" href="#"><span>Repositório</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects__card">
+                    <img class="card__cover" src="/assets/images/hamburgueriaz-preview.png" alt="HamburgueriaZ">
+                    <div class="card__body">
+                        <h3 class="card__title">HamburgueriaZ</h3>
+                        <p class="card__description">Aplicação para gerenciamento de pedidos e cardápio — projeto com Java/Android/XML (exemplo).</p>
+                        <ul>
+                            <li>Cadastro de produtos</li>
+                            <li>Fluxo de pedidos</li>
+                            <li>Persistência simples</li>
+                        </ul>
+
+                        <ul class="skills__list">
+                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/java.svg" alt="Java"></li>
+                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/xml.svg" alt="XML"></li>
+                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/android.svg" alt="Android"></li>
+                        </ul>
+
+                        <div class="card__buttons">
+                            <a class="btn btn--primary" href="#"><span>Prévia</span><i class="bi bi-menu-button-wide"></i></a>
+                            <a class="btn" href="#"><span>Repositório</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <a href="#">
+                <button class="btn btn--primary">
+                    <span>Visualizar todos os projetos</span>
+                </button>
+                </a> -->
+            </div>
+        </section>
+
+        <section id="contato" class="contact" aria-labelledby="contact-title">
+            <h2 id="contact-title">Contate-me</h2>
+            <p>Disponível para serviços e novas conexões.</p>
+
+            <ul class="menu menu--social">
+                <li>
+                    <a href="#" class="menu__link">
+                        <i class="bi bi-github"></i>
+                        <span>Github</span>
+                    </a>
                 </li>
-                <li class="skills__item">
-                    <img class="skills__logo" src="/assets/skills/html.svg" alt="">
+
+                <li>
+                    <a href="#" class="menu__link">
+                        <i class="bi bi-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
                 </li>
-                <li class="skills__item">
-                    <img class="skills__logo" src="/assets/skills/css3.svg" alt="">
-                </li>
-                <li class="skills__item">
-                    <img class="skills__logo" src="/assets/skills/javascript.svg" alt="">
+
+                <li>
+                    <a href="#" class="menu__link">
+                        <i class="bi bi-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
                 </li>
             </ul>
         </section>
-
-
     </main>
 
     <footer>
-        <p>
-            @2023.Todos os Direitos Reservados. Maria Eduarda. Desenvolvido por <a href="#">github</a>
-        </p>
+        <p>@2025. Todos os Direitos Reservados. Desenvolvido por <a href="#">github</a></p>
     </footer>
 
-   <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/script.js"></script>
 </body>
 </html>
