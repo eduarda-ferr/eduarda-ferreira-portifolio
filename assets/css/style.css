@@ -65,6 +65,10 @@ h2 {
     margin-bottom: 2rem;
 }
 
+h4 {
+    color: var(--text-color);
+}
+
 h1, h2, h3 {
     font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
@@ -79,12 +83,22 @@ p {
 
 }
 
+#text__projects {
+
+    font-weight: 100;
+    text-align: start;
+}
+
+#info {
+    color: var(--icon-color);
+}
+
 .header {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    padding:  0.5rem 1rem;
+    padding:  0.5rem 0.5rem;
     width: 100%;
 }
 
@@ -108,10 +122,10 @@ p {
     align-items: center;
     background: var(--primary-bg-color);
 }
+
 .menu__item {
     width: 100%;
 }
-
 
 .menu--mobile {
     width: 100vw;
@@ -134,11 +148,12 @@ p {
 .menu__link:hover .menu__icon,
 .menu__link:hover .menu__text {
     color: var(--primary-color);
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .menu__icon, .menu__text {
     color: var(--text-color);
+    font-weight: 200;
 }
 
 .menu__icon {
@@ -146,8 +161,10 @@ p {
 }
 
 .menu__text {
-    font-size: 1.75rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
+    font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: .20rem;
 }
 
 .header__nav{
@@ -159,6 +176,8 @@ p {
 }
 
 .menu--social {
+    display: flex;
+    flex-direction: row;
     gap: 1rem;
 }
 
@@ -211,6 +230,35 @@ main {
     gap: 1.5rem;
 }
 
+.about__photo {
+    display: flex;
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 5rem;
+    margin-bottom: 2.4rem;
+}
+
+.about__icons {
+    display: flex;
+    flex-direction:column;
+    align-items:stretch;
+    margin-bottom: 2.5rem;
+    color: var(--title-color);
+    gap: 1.5rem;
+}
+
+.about__icons2 {
+    display: flex;
+    flex-direction:row;
+    align-items:stretch;
+    margin-bottom: 1.5rem;
+    color: var(--title-color);
+}
+
+.descrition__buttons {
+    padding: 1rem;
+}
+
 .main__content2 {
     width: 100%;
     aspect-ratio: 16/9;
@@ -222,9 +270,9 @@ main {
     justify-content: flex-start;
     align-items: center;
     gap: 1.25rem;
-    padding: 6.25rem 1rem 2rem 1rem;
+    padding: 6rem 1rem 2rem 1rem;
     background: var(--secondary-bg-color);
-    margin-top: -5.5rem;
+    margin-top: 3rem;
 }
 
 .skills h2 {
@@ -265,6 +313,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding-bottom: 3rem;
 }
 
 .card__cover {
@@ -344,6 +393,32 @@ main {
     transform: rotate(180deg);
 }
 
+#logo__css {
+    width: 2.6rem;
+}
+
+#logo__html {
+    width: 3rem;
+    margin-top: .5rem;
+}
+#logo__gemini {
+    margin-bottom: .5rem;
+}
+
+#logo__java {
+    width: 3.5rem;
+    margin-bottom: .3rem;
+}
+
+#logo__xml {
+    width: 4rem;
+    margin-bottom: 1rem;
+}
+
+#logo__android {
+    width: 6.7rem;
+}
+
 footer {
     margin-bottom: 5rem;
 }
@@ -369,13 +444,19 @@ footer p {
     }
 
     .header__nav{
-    display: flex;
+        display: flex;
+    }
+
+    .menu__text {
+        font-size: 1.5rem; /* maior para desktop */
+        text-transform: uppercase;
+        font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: .15rem;
     }
 
     .header__nav, .header__toggle {
     min-width: 30%;   
     }
-
 
     h1 {
         font-size: 4rem;
@@ -398,7 +479,11 @@ footer p {
 
     .skills {
         padding: 6.2rem 6rem 2rem 6rem;
-        margin-top: -6rem;
+        margin: 3rem 5rem 6.25rem;
+    }
+
+    .projects__card {
+        padding-bottom: 3rem;
     }
 
     footer {
@@ -430,22 +515,24 @@ footer p {
     }
 
     .skills__list {
-        gap: 1rem;
+        gap: .5rem;
     }
 
 
     .skills__item {
-        width: 6rem;
-        height: 6rem;
+        width: 4.8rem;
+        height: 4.8rem;
 
     }
 
     .projects__card {
         flex-direction: row;
+        padding-bottom: 6rem;
     }
 
     .card__cover {
         width: 50%;
+        height: 70%;
     }
 
     .about {
@@ -480,6 +567,9 @@ footer p {
         width: auto;
     }
 
+    #projects-title {
+    padding-bottom: 3rem;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -506,4 +596,5 @@ footer p {
     .skills {
         padding: 10rem 15rem 4rem;
     }
+
 }

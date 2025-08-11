@@ -13,33 +13,38 @@
 
     <header class="header">
 
-        <nav class="header__nav">
-            <ul class="menu menu--principal">
-                <li class="menu__item">
-                <a class="menu__link active" href="#home"></a>
-                <span class="menu__text">Home</span>
-                </li>
-
-                <li class="menu__item">
-                <a class="menu__link" href="#projetos"></a>
-                <span class="menu__text">Projetos</span>
-                </li>
-
-                <li class="menu__item">
-                <a class="menu__link" href="#sobre"></a>
-                <span class="menu__text">Sobre</span>
-                </li>
-
-                <li class="menu__item">
-                <a class="menu__link" href="#contato"></a>
-                <span class="menu__text">Contato</span>
-                </li>
-            </ul>
-        </nav>
-
         <div class="header__brand">
             <img class="brand__logo" src="/assets/images/logo.png" alt="logo m.e" />
         </div>
+
+        <nav class="header__nav">
+            <ul class="menu menu--principal">
+                <li class="menu__item">
+                <a class="menu__link active" href="#home">
+                    <span class="menu__text">Home</span>
+                </a>
+                </li>
+
+
+                <li class="menu__item">
+                <a class="menu__link" href="#sobre">
+                    <span class="menu__text">Sobre</span>
+                </a>  
+                </li>
+
+                <li class="menu__item">
+                <a class="menu__link" href="#projetos">
+                    <span class="menu__text">Projetos</span>
+                </a>  
+                </li>
+
+                <li class="menu__item">
+                    <a class="menu__link" href="#contato">
+                        <span class="menu__text">Contato</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
         <div class="header__toggle">
             <i id="toggleTheme" class="bi bi-sun"></i>
@@ -56,17 +61,17 @@
             </li>
 
             <li class="menu__item">
-                <a class="menu__link" href="#projetos">
-                <i class="menu__icon bi bi-window"></i>
-                </a>
-                <span class="menu__text">Projetos</span>
-            </li>
-
-            <li class="menu__item">
                 <a class="menu__link" href="#sobre">
                 <i class="menu__icon bi bi-file-person"></i>
                 </a>
                 <span class="menu__text">Sobre</span>
+            </li>
+
+            <li class="menu__item">
+                <a class="menu__link" href="#projetos">
+                <i class="menu__icon bi bi-window"></i>
+                </a>
+                <span class="menu__text">Projetos</span>
             </li>
 
             <li class="menu__item">
@@ -78,118 +83,39 @@
         </ul>
     </nav>
 
+    
     <main>
 
         <section id="home" class="main__hero">
             <div class="main__content1">
-                <h1>Desenvolvimento Front-end</h1>
-                <p>Maria Eduarda Ferreira Barbosa, Ponta de Pedras - PA, Desenvolvedora Front-end Júnior, Estudante de Análise e Desenvolvimento de Sistemas</p>
 
+                <h1>Desenvolvimento Front-end</h1>
                 <ul class="menu--social">
                 <li>
-                    <a class="menu__link" href="">
+                    <a class="menu__link" href="https://github.com/eduarda-ferr">
                         <i class="menu__icon bi bi-github"></i>
                     </a>
                 </li>
                 <li>
-                    <a class="menu__link" href="">
+                    <a class="menu__link" href="https://www.linkedin.com/in/eduardafb/">
                         <i class="menu__icon bi bi-linkedin"></i>
                     </a>
                 </li>
                 <li>
-                    <a class="menu__link" href="">
+                    <a class="menu__link" href="https://www.instagram.com/e.duardafb/">
                         <i class="menu__icon bi bi-instagram"></i>
                     </a>
                 </li>
                 </ul>
 
+                <p>Maria Eduarda Ferreira Barbosa</p>
+                <p>Ponta de Pedras - PA</p>
+                <p>Desenvolvedor(a) Front-End Júnior | Estudante de Análise e Desenvolvimento de Sistemas</p>
+
                 <!-- <button class="btn btn--primary" onclick="location.href='#projetos'">
                     <span>Visualizar Projetos</span>
                     <i class="bi bi-distribute-vertical"></i>
                 </button> -->
-            </div>
-        </section>
-
-        <section id="sobre" class="about" aria-labelledby="about-title">
-            <div class="about__content1">
-                <img src="/assets/images/me.jpg" alt="Maria Eduarda" class="about__photo"/>
-
-                <div class="about__description">
-                    <h2 id="about-title">Sobre Mim</h2>
-                    <p><strong>Maria Eduarda Ferreira Barbosa</strong> — estudante de <em>Análise e Desenvolvimento de Sistemas</em>, atualmente no semestre final. Em transição para área de Front-End e interessada também em Java.</p>
-
-                    <div class="about__icons">
-                        <i class="bi bi-javascript"></i>
-                        <span>JavaScript: Básico</span>
-                        <i class="bi bi-filetype-java"></i>
-                        <span>Java: Intermediário</span>
-                        <i class="bi bi-translate"></i>
-                        <span>Inglês: Básico</span>
-                        <i class="bi bi-pc-display-horizontal"></i>
-                        <span>Informática: Avançada</span>
-                    </div>
-
-                    <div class="descrition__buttons">
-                        <a href="#" title="Currículo">
-                            <button class="btn btn--primary"><span>Currículo</span><i class="bi bi-link-45deg"></i></button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="about__content2">
-                <div class="col1">
-                    <div class="row1">
-                        <h3>Formação</h3>
-                        <h4>Análise e Desenvolvimento de Sistemas</h4>
-                        <span>08/2023 - Atualmente</span>
-                        <div class="about__icons"><i class="bi bi-building"></i><span>Faculdade: Anhanguera Educacional</span></div>
-                    </div>
-
-                    <div class="row2">
-                        <h3>Experiências</h3>
-                        <h4>Projetos acadêmicos e pessoais</h4>
-                        <p>Atuação em projetos voltados para front-end, integração com APIs e desenvolvimento em Java. Participação em desafios e cursos.</p>
-                        <ul>
-                            <li class="about__item">Projeto X — descrição breve</li>
-                            <li class="about__item">Projeto Y — descrição breve</li>
-                            <li class="about__item">Projeto Z — descrição breve</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col2">
-                    <h3>Cursos</h3>
-                    <div id="accordion">
-                        <div class="accordion__item active">
-                            <button class="accordion__header">Front-end <i class="bi bi-caret-down"></i></button>
-                            <div class="accordion__body">
-                                <p>Curso de Front-end com HTML, CSS e JavaScript. (detalhes...)</p>
-                            </div>
-                        </div>
-
-                        <div class="accordion__item">
-                            <button class="accordion__header">Java / POO <i class="bi bi-caret-down"></i></button>
-                            <div class="accordion__body">
-                                <p>Curso de Java com foco em Programação Orientada a Objetos</p>
-                            </div>
-                        </div>
-
-                        <div class="accordion__item">
-                            <button class="accordion__header">Angular <i class="bi bi-caret-down"></i></button>
-                            <div class="accordion__body">
-                                <p>Curso de Java com foco em Programação Orientada a Objetos</p>
-                            </div>
-                        </div>
-
-                        <div class="accordion__item">
-                            <button class="accordion__header">Outros Cursos <i class="bi bi-caret-down"></i></button>
-                            <div class="accordion__body">
-                                <p>Lista de cursos e certificações (Git, GitHub, Bootcamps, etc.).</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
@@ -202,50 +128,106 @@
                 <li class="skills__item"><img class="skills__logo" src="/assets/skills/javascript.svg" alt="JavaScript"></li>
             </ul>
         </section>
-    
+
+        <section id="sobre" class="about" aria-labelledby="about-title">
+            <div class="about__content1">
+                <img src="/assets/images/vector-sign-of-people-icon.jpg" alt="Maria Eduarda" class="about__photo"/>
+
+                <div class="about__description">
+                    <h2 id="about-title">Sobre Mim</h2>
+                    <p><strong>Maria Eduarda Ferreira Barbosa</strong> — Estudante de <em>Análise e Desenvolvimento de Sistemas</em>, atualmente no semestre final. Em transição para área de Front-End, e também com foco em Java Spring Boot.</p>
+
+                    <div class="descrition__buttons">
+                        <a href="/assets/mariaEduarda_dev.pdf" title="Currículo">
+                            <button class="btn btn--primary"><span>Currículo</span><i class="bi bi-link-45deg"></i></button>
+                        </a>
+                    </div>
+                    
+                    <div class="about__icons">
+                        <span> <i class="bi bi-javascript"></i> JavaScript: Básico</span>
+                        <span> <i class="bi bi-filetype-java"></i> Java: Intermediário</span>
+                        <span> <i class="bi bi-translate"></i> Inglês: Básico</span>
+                        <span> <i class="bi bi-pc-display-horizontal"></i> Informática: Avançada</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about__content2">
+                <div class="col1">
+                    <div class="row1">
+                        <h3>Formação</h3>
+                        <h4>Análise e Desenvolvimento de Sistemas</h4>
+                        <span id="info">08/2023 - Atualmente</span>
+                        <div class="about__icons2"><i class="bi bi-building"></i><span> Faculdade: Anhanguera Educacional</span></div>
+                    </div>
+
+                    <div class="row2">
+                        <h3>Experiências</h3>
+                        <h4>Projetos acadêmicos e pessoais</h4>
+                        <p id="text__projects">Atuação em projetos voltados para front-end, integração com APIs e desenvolvimento em Java. Participação em desafios e cursos.</p>
+                        <ul id="info">
+                            <li class="about__item">Metodologias Ágeis</li>
+                            <li class="about__item">UX/UI</li>
+                            <li class="about__item">POO</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col2">
+                    <h3>Cursos</h3>
+                    <div id="accordion">
+                        <div class="accordion__item active">
+                            <button class="accordion__header">Front-end <i class="bi bi-caret-down"></i></button>
+                            <div class="accordion__body">
+                                <p>Front-end com HTML, CSS, JavaScript e integrações com APIs. (Em andamento)</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <button class="accordion__header">Java Cloud Native <i class="bi bi-caret-down"></i></button>
+                            <div class="accordion__body">
+                                <p>Java com foco em Programação Orientada a Objetos, tecnologias voltadas à construção de aplicações modernas com Java, banco de dados (relacionais e NoSQL), Azure, e inteligência artificial com OpenAI.</p>
+                                <a href="/assets/certficado_javaCloud.pdf">
+                                     <i class="bi bi-link-45deg"></i>
+                                </a>
+                               
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <button class="accordion__header">Angular 13<i class="bi bi-caret-down"></i></button>
+                            <div class="accordion__body">
+                                <p>Formação prática de desenvolvimento de aplicações web através de conceitos como Arquitetura, Angular CLI, TypeScript, criação de componentes, serviços, pipes, diretivas, formulários com validação, rotas, consumo de APIs e integração com Bootstrap.</p>
+                                <a href="/assets/certificado__udemy.pdf">
+                                     <i class="bi bi-link-45deg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="projetos" class="projects" aria-labelledby="projects-title">
             <h2 id="projects-title">Projetos</h2>
 
             <div class="projects__container">
-                <div class="projects__card">
-                    <img class="card__cover" src="/assets/images/project-placeholder.png" alt="Prévia do projeto">
-                    <div class="card__body">
-                        <h3 class="card__title">Título do Projeto</h3>
-                        <p class="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis tempora esse suscipit sapiente laudantium...</p>
-                        <ul>
-                            <li>Funcionalidade 1</li>
-                        </ul>
-
-                        <ul class="skills__list">
-                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/java.svg" alt="Java"></li>
-                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/html.svg" alt="HTML"></li>
-                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/css3.svg" alt="CSS"></li>
-                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/javascript.svg" alt="JS"></li>
-                        </ul>
-
-                        <div class="card__buttons">
-                            <a class="btn btn--primary" href="#"><span>Prévia</span><i class="bi bi-menu-button-wide"></i></a>
-                            <a class="btn" href="#"><span>Repositório</span></a>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="projects__card">
-                    <img class="card__cover" src="/assets/images/nlw-preview.png" alt="NLW Agents - Assistente IA">
+                    <img class="card__cover" src="/assets/images/img_portifólio.png" alt="NLW Agents - Assistente IA">
                     <div class="card__body">
-                        <h3 class="card__title">NLW Agents - Assistente IA</h3>
-                        <p class="card__description">Assistente IA desenvolvido como desafio, integrando front-end e APIs de IA para protótipos.</p>
-                        <ul>
+                        <h3 class="card__title">Portifólio</h3>
+                        <p class="card__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum placeat quod, quo est ab sint quae in? Enim praesentium odio vero explicabo culpa quas nam autem. Est iusto saepe similique?</p>
+                        <ul id="info">
                             <li>Interface responsiva</li>
                             <li>Integração com API de IA</li>
                             <li>Deploy em ambiente público</li>
                         </ul>
 
                         <ul class="skills__list">
-                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/html.svg" alt="HTML"></li>
+                            <li class="skills__item"><img class="skills__logo" id="logo__html" src="/assets/skills/html.svg" alt="HTML"></li>
                             <li class="skills__item"><img class="skills__logo" src="/assets/skills/css3.svg" alt="CSS"></li>
-                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/javascript.svg" alt="JS"></li>
-                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/ai.svg" alt="IA"></li>
+                            <li class="skills__item"><img class="skills__logo" id="logo__css" src="/assets/skills/javascript.svg" alt="JS"></li>
                         </ul>
 
                         <div class="card__buttons">
@@ -256,48 +238,51 @@
                 </div>
 
                 <div class="projects__card">
-                    <img class="card__cover" src="/assets/images/sudoku-preview.png" alt="Sudoku - Java">
+                    <img class="card__cover" src="/assets/images/img_nlw.png" alt="NLW Agents - Assistente IA">
                     <div class="card__body">
-                        <h3 class="card__title">Sudoku (Java)</h3>
-                        <p class="card__description">Jogo de Sudoku desenvolvido em Java com foco em POO e lógica de resolução.</p>
-                        <ul>
-                            <li>POO em Java</li>
-                            <li>Validações e geração de tabuleiros</li>
-                            <li>Execução via terminal</li>
+                        <h3 class="card__title">NLW Agents - Assistente IA</h3>
+                        <p class="card__description">Assistente IA desenvolvido como desafio, integrando front-end e APIs de IA Gemini para protótipos.</p>
+                        <ul id="info">
+                            <li>Interface responsiva</li>
+                            <li>Integração com API de IA</li>
+                            <li>Deploy em ambiente público</li>
                         </ul>
 
                         <ul class="skills__list">
-                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/java.svg" alt="Java"></li>
-                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/spring.svg" alt="Spring (quando aplicável)"></li>
+                            <li class="skills__item"><img class="skills__logo" id="logo__html" src="/assets/skills/html.svg" alt="HTML"></li>
+                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/css3.svg" alt="CSS"></li>
+                            <li class="skills__item"><img class="skills__logo" id="logo__css" src="/assets/skills/javascript.svg" alt="JS"></li>
+                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/logo-ia.png" alt="IA"></li>
+                            <li class="skills__item"><img class="skills__logo" id="logo__gemini" src="/assets/skills/logo-gemini.png" alt="IA"></li>
                         </ul>
 
                         <div class="card__buttons">
-                            <a class="btn btn--primary" href="#"><span>Prévia</span><i class="bi bi-menu-button-wide"></i></a>
-                            <a class="btn" href="#"><span>Repositório</span></a>
+                            <a class="btn btn--primary" href="https://eduarda-ferr.github.io/Trilha-NLW-Agents/"><span>Prévia</span><i class="bi bi-menu-button-wide"></i></a>
+                            <a class="btn" href="https://github.com/eduarda-ferr/Trilha-NLW-Agents"><span>Repositório</span></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="projects__card">
-                    <img class="card__cover" src="/assets/images/hamburgueriaz-preview.png" alt="HamburgueriaZ">
+                    <img class="card__cover" src="/assets/images/img_hamburgueriaZ.jpeg" alt="HamburgueriaZ">
                     <div class="card__body">
                         <h3 class="card__title">HamburgueriaZ</h3>
-                        <p class="card__description">Aplicação para gerenciamento de pedidos e cardápio — projeto com Java/Android/XML (exemplo).</p>
-                        <ul>
+                        <p class="card__description">Aplicação para gerenciamento de pedidos e cardápio — projeto com Java/Android/XML.</p>
+                        <ul id="info">
                             <li>Cadastro de produtos</li>
                             <li>Fluxo de pedidos</li>
                             <li>Persistência simples</li>
                         </ul>
 
                         <ul class="skills__list">
-                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/java.svg" alt="Java"></li>
-                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/xml.svg" alt="XML"></li>
-                            <li class="skills__item"><img class="skills__logo" src="/assets/skills/android.svg" alt="Android"></li>
+                            <li class="skills__item"><img class="skills__logo" id="logo__java" src="/assets/skills/java.svg" alt="Java"></li>
+                            <li class="skills__item"><img class="skills__logo" id="logo__xml" src="/assets/skills/logo-xml.png" alt="XML"></li>
+                            <li class="skills__item"><img class="skills__logo" id="logo__android" src="/assets/skills/logo-android.png" alt="Android"></li>
                         </ul>
 
                         <div class="card__buttons">
                             <a class="btn btn--primary" href="#"><span>Prévia</span><i class="bi bi-menu-button-wide"></i></a>
-                            <a class="btn" href="#"><span>Repositório</span></a>
+                            <a class="btn" href="https://github.com/eduarda-ferr/HamburgueriaZ-app"><span>Repositório</span></a>
                         </div>
                     </div>
                 </div>
@@ -316,21 +301,21 @@
 
             <ul class="menu menu--social">
                 <li>
-                    <a href="#" class="menu__link">
+                    <a href="https://github.com/eduarda-ferr" class="menu__link">
                         <i class="bi bi-github"></i>
                         <span>Github</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#" class="menu__link">
+                    <a href="https://www.linkedin.com/in/eduardafb/" class="menu__link">
                         <i class="bi bi-linkedin"></i>
                         <span>LinkedIn</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#" class="menu__link">
+                    <a href="https://www.instagram.com/e.duardafb/" class="menu__link">
                         <i class="bi bi-instagram"></i>
                         <span>Instagram</span>
                     </a>
@@ -340,7 +325,7 @@
     </main>
 
     <footer>
-        <p>@2025. Todos os Direitos Reservados. Desenvolvido por <a href="#">github</a></p>
+        <p>@2025. Todos os Direitos Reservados. Desenvolvido por <a href="https://www.linkedin.com/in/eduardafb/">Maria Eduarda Ferreira Barbosa</a></p>
     </footer>
 
     <script src="/assets/js/script.js"></script>
