@@ -209,6 +209,46 @@ select {
   align-items: center;
 }
 
+.terminal-intro {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 1.25rem;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid rgba(125, 211, 252, 0.4);
+  border-radius: 0.65rem;
+  background: rgba(15, 23, 42, 0.68);
+  box-shadow: 0 0 18px rgba(125, 211, 252, 0.12);
+  color: #b9f4ff;
+  font-family: Consolas, 'Courier New', monospace;
+  font-size: 0.86rem;
+  animation: terminal-glow 2.8s ease-in-out infinite;
+}
+
+.terminal-intro__prompt {
+  color: #c4b5fd;
+  font-weight: 700;
+}
+
+.terminal-intro__cursor {
+  width: 0.48rem;
+  height: 1rem;
+  background: #7dd3fc;
+  animation: terminal-cursor 1s steps(2, start) infinite;
+}
+
+@keyframes terminal-cursor {
+  to {
+    visibility: hidden;
+  }
+}
+
+@keyframes terminal-glow {
+  50% {
+    box-shadow: 0 0 24px rgba(125, 211, 252, 0.25);
+  }
+}
+
 .eyebrow {
   color: var(--primary);
   font-size: 0.82rem;
@@ -441,6 +481,12 @@ h4 {
   background: linear-gradient(135deg, rgba(15, 118, 110, 0.85), rgba(45, 212, 191, 0.65)),
     radial-gradient(circle at top left, rgba(255, 255, 255, 0.16), transparent 40%),
     #0f172a;
+}
+
+.visual-aws {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.88), rgba(124, 58, 237, 0.78)),
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.2), transparent 40%),
+    #111827;
 }
 
 .visual-food {
@@ -1021,6 +1067,11 @@ footer p {
 
   body::before,
   body::after {
+    animation: none;
+  }
+
+  .terminal-intro,
+  .terminal-intro__cursor {
     animation: none;
   }
 }
