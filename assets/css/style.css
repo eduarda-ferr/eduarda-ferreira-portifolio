@@ -1,3 +1,75 @@
+@property --bg {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #170f1f;
+}
+
+@property --bg-soft {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #20172e;
+}
+
+@property --panel {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: rgba(33, 23, 40, 0.74);
+}
+
+@property --panel-strong {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: rgba(45, 32, 58, 0.9);
+}
+
+@property --line {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: rgba(245, 166, 211, 0.28);
+}
+
+@property --text {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #fdf4ff;
+}
+
+@property --muted {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #e9d4f4;
+}
+
+@property --heading {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #fff7fb;
+}
+
+@property --primary {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ff7ab6;
+}
+
+@property --primary-strong {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #a78bfa;
+}
+
+@property --secondary {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #7dd3fc;
+}
+
+@property --shadow {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: rgba(18, 10, 26, 0.35);
+}
+
 :root {
   --bg: #170f1f;
   --bg-soft: #20172e;
@@ -11,40 +83,69 @@
   --primary-strong: #a78bfa;
   --secondary: #7dd3fc;
   --shadow: rgba(18, 10, 26, 0.35);
+  transition:
+    --bg 300ms ease,
+    --bg-soft 300ms ease,
+    --panel 300ms ease,
+    --panel-strong 300ms ease,
+    --line 300ms ease,
+    --text 300ms ease,
+    --muted 300ms ease,
+    --heading 300ms ease,
+    --primary 300ms ease,
+    --primary-strong 300ms ease,
+    --secondary 300ms ease,
+    --shadow 300ms ease;
 }
 
 :root[data-theme='light'] {
-  --bg: #fff7fb;
-  --bg-soft: #f4efff;
-  --panel: rgba(255, 255, 255, 0.8);
-  --panel-strong: rgba(255, 255, 255, 0.96);
-  --line: rgba(168, 85, 247, 0.18);
-  --text: #2a1b3d;
-  --muted: #5f4b78;
-  --heading: #2d123f;
-  --primary: #e754a8;
-  --primary-strong: #7c3aed;
-  --secondary: #4ec3d8;
-  --shadow: rgba(76, 29, 149, 0.1);
+  --bg: #f7f6f8;
+  --bg-soft: #efedf2;
+  --panel: rgba(250, 249, 251, 0.92);
+  --panel-strong: #f8f7f9;
+  --line: rgba(91, 67, 107, 0.2);
+  --text: #30283a;
+  --muted: #5e5668;
+  --heading: #382d43;
+  --primary: #a33f78;
+  --primary-strong: #68479a;
+  --secondary: #28778b;
+  --shadow: rgba(56, 42, 68, 0.12);
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  transition-property: background-color, color, border-color, box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
+
 body {
   position: relative;
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, var(--bg) 0%, var(--bg-soft) 45%, #231a32 100%);
+  background: linear-gradient(135deg, var(--bg) 0%, var(--bg-soft) 45%, var(--bg) 100%);
   color: var(--text);
   line-height: 1.6;
   overflow-x: hidden;
+}
+
+:root[data-theme='light'] body::before,
+:root[data-theme='light'] body::after {
+  opacity: 0.24;
 }
 
 body::before,
@@ -124,7 +225,7 @@ select {
 }
 
 :root[data-theme='light'] .site-header {
-  background: rgba(255, 247, 251, 0.76);
+  background: rgba(247, 246, 248, 0.92);
 }
 
 .header-inner {
@@ -292,7 +393,7 @@ h2 {
 }
 
 :root[data-theme='light'] h2 {
-  color: #7c3aed;
+  color: var(--primary-strong);
 }
 
 h3 {
@@ -307,7 +408,6 @@ h4 {
 
 .lead,
 .about-copy p,
-.cloud-content p,
 .project-body p,
 .contact-box p {
   color: var(--muted);
@@ -377,7 +477,7 @@ h4 {
 :root[data-theme='light'] .tech-group,
 :root[data-theme='light'] .contact-box,
 :root[data-theme='light'] .project-card {
-  background: rgba(255, 255, 255, 0.8);
+  background: var(--panel-strong);
 }
 
 .hero-card {
@@ -396,6 +496,12 @@ h4 {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 1.25rem;
+}
+
+:root[data-theme='light'] .mini-tag {
+  color: #70415f;
+  background: rgba(163, 63, 120, 0.08);
+  border-color: rgba(163, 63, 120, 0.24);
 }
 
 .hero-card ul,
@@ -587,16 +693,101 @@ h4 {
   padding: 2rem;
 }
 
-.cloud-badge {
-  display: inline-flex;
-  border-radius: 999px;
-  background: rgba(112, 128, 144, 0.12);
+.cloud-groups {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.cloud-group {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.cloud-group > h4 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.cloud-item {
+  min-width: 0;
+  padding: 1.15rem;
   border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--panel);
+}
+
+.cloud-item--featured {
+  padding: 1.5rem;
+  border-color: rgba(255, 122, 182, 0.55);
+  background: linear-gradient(135deg, rgba(255, 122, 182, 0.12), var(--panel));
+}
+
+.cloud-item h5 {
+  margin-bottom: 0.55rem;
   color: var(--heading);
-  padding: 0.7rem 1rem;
-  font-size: 0.85rem;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.cloud-item p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.cloud-item__label {
+  margin-bottom: 0.45rem;
+  color: var(--primary) !important;
+  font-size: 0.75rem !important;
   font-weight: 700;
-  margin-bottom: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.cloud-items {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.cloud-item__status {
+  margin-top: 0.8rem;
+  font-size: 0.82rem !important;
+}
+
+.cloud-progress-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  list-style: none;
+}
+
+.cloud-progress-list li {
+  display: grid;
+  align-content: start;
+  gap: 0.3rem;
+  padding: 0.85rem 1rem;
+  border-left: 2px solid var(--secondary);
+  border-radius: 0.25rem 0.75rem 0.75rem 0.25rem;
+  background: var(--panel);
+  color: var(--muted);
+  font-size: 0.92rem;
+  overflow-wrap: anywhere;
+}
+
+.cloud-progress-list strong {
+  color: var(--heading);
+}
+
+.cloud-progress-list span {
+  font-size: 0.84rem;
+}
+
+.cloud-note {
+  margin-top: 1.5rem;
+  color: var(--muted);
+  font-size: 0.85rem;
 }
 
 .tech-grid {
@@ -656,8 +847,7 @@ h4 {
 
 @media (max-width: 900px) {
   .hero-inner,
-  .about-grid,
-  .tech-grid {
+  .about-grid {
     grid-template-columns: 1fr;
   }
 
@@ -669,7 +859,9 @@ h4 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .tech-grid {
+  .tech-grid,
+  .cloud-items,
+  .cloud-progress-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -694,17 +886,51 @@ h4 {
     padding: 4rem 0;
   }
 
+  h1 {
+    font-size: clamp(2.2rem, 10vw, 3rem);
+    overflow-wrap: anywhere;
+  }
+
+  h2 {
+    font-size: clamp(1.2rem, 5vw, 1.6rem);
+    letter-spacing: normal;
+  }
+
+  h3 {
+    font-size: clamp(1.7rem, 8vw, 2.2rem);
+    overflow-wrap: anywhere;
+  }
+
+  h4,
+  .project-body h4 {
+    overflow-wrap: anywhere;
+  }
+
+  .container {
+    width: min(100% - 1.5rem, 1120px);
+  }
+
   .hero {
     padding-top: 2.5rem;
   }
 
-  .tech-grid {
+  .tech-grid,
+  .cloud-items,
+  .cloud-progress-list {
     grid-template-columns: 1fr;
+  }
+
+  .cloud-box {
+    padding: 1rem;
   }
 
   .projects-grid,
   .secondary-projects {
     grid-template-columns: 1fr;
+  }
+
+  .project-body {
+    padding: 1.2rem;
   }
 
   .button,
@@ -919,16 +1145,7 @@ footer p {
     min-width: 30%;   
     }
 
-    h1 {
-        font-size: 4rem;
-    }
-
-    h2 {
-        font-size: 3rem;
-        letter-spacing: 0.4rem;
-    }
-
-    main, .projects {
+    .projects {
         padding: 8rem 6rem 4rem 6rem;
     }
 
@@ -953,14 +1170,6 @@ footer p {
 }
 
 @media (min-width:1200px) {
-    main {
-        padding: 12rem 6rem 2rem;
-    }
-
-    h2 {
-        font-size: 5rem;
-    }
-
     .main__content1 .btn {
         width: auto;
     }
@@ -1034,24 +1243,8 @@ footer p {
 }
 
 @media (min-width: 1400px) {
-    h1 {
-        font-size: 6.25rem;
-    }
-
-    h2 {
-        font-size: 5rem;
-    }
-
-    p {
-        font-size: 1.5rem;
-    }
-
     .header {
         padding: 1rem 15rem;
-    }
-
-    main {
-        padding: 12rem 15rem 2rem;
     }
 
     .skills {

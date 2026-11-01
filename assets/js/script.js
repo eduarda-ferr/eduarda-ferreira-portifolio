@@ -8,7 +8,9 @@ const applyTheme = (theme) => {
   if (!themeToggle) return;
 
   const isLight = theme === 'light';
-  themeToggle.innerHTML = isLight ? '<span class="theme-toggle__icon">🌙</span>' : '<span class="theme-toggle__icon">☀️</span>';
+  themeToggle.innerHTML = isLight
+    ? '<i class="bi bi-moon-fill" aria-hidden="true"></i>'
+    : '<i class="bi bi-sun-fill" aria-hidden="true"></i>';
   themeToggle.setAttribute('aria-label', isLight ? 'Ativar tema escuro' : 'Ativar tema claro');
 };
 
