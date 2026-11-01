@@ -1,337 +1,348 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-theme="dark">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Maria Eduarda - Portifólio</title>
-  <meta name="description" content="Portifólio front-end Maria Eduarda com objetivo de compartilhar projetos e habilidades desenvolvidas."/>
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
-</head>
-<body>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio profissional de Maria Eduarda Ferreira Barbosa, desenvolvedora Júnior focada em Java, AWS e IA aplicada."
+    />
+    <title>Maria Eduarda Ferreira Barbosa | Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#inicio" aria-label="Início do Portfólio">
+          <span class="brand-mark">ME</span>
+          <span class="brand-name">Maria Eduarda</span>
+        </a>
 
-    <header class="header">
-
-        <div class="header__brand">
-            <img class="brand__logo" src="./assets/images/logo.png" alt="logo m.e" />
-        </div>
-
-        <nav class="header__nav">
-            <ul class="menu menu--principal">
-                <li class="menu__item">
-                <a class="menu__link active" href="#home">
-                    <span class="menu__text">Home</span>
-                </a>
-                </li>
-
-
-                <li class="menu__item">
-                <a class="menu__link" href="#sobre">
-                    <span class="menu__text">Sobre</span>
-                </a>  
-                </li>
-
-                <li class="menu__item">
-                <a class="menu__link" href="#projetos">
-                    <span class="menu__text">Projetos</span>
-                </a>  
-                </li>
-
-                <li class="menu__item">
-                    <a class="menu__link" href="#contato">
-                        <span class="menu__text">Contato</span>
-                    </a>
-                </li>
-            </ul>
+        <nav class="site-nav" aria-label="Navegação principal">
+          <a href="#sobre">Sobre</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#cloud">Cloud</a>
+          <a href="#tecnologias">Tecnologias</a>
+          <a href="#contato">Contato</a>
         </nav>
 
-        <div class="header__toggle">
-            <i id="toggleTheme" class="bi bi-sun"></i>
-        </div>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar tema">
+          <span class="theme-toggle__icon">☀️</span>
+        </button>
+      </div>
     </header>
- 
-    <nav class="nav--mobile">
-        <ul class="menu menu--mobile">
-            <li class="menu__item">
-                <a class="menu__link active" href="#home">
-                <i class="menu__icon bi-house-fill"></i>
-                </a>
-                <span class="menu__text">Home</span>
-            </li>
 
-            <li class="menu__item">
-                <a class="menu__link" href="#sobre">
-                <i class="menu__icon bi bi-file-person"></i>
-                </a>
-                <span class="menu__text">Sobre</span>
-            </li>
+    <main id="inicio">
+      <section class="hero section">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Desenvolvedora Júnior</p>
+            <h1>Maria Eduarda Ferreira Barbosa</h1>
+            <h2>Desenvolvedora Júnior | Java, AWS e IA aplicada</h2>
+            <p class="lead">
+              Graduada em Análise e Desenvolvimento de Sistemas e certificada AWS Cloud
+              Practitioner. Desenvolvo projetos com Java, automações com IA e interfaces
+              web, buscando uma oportunidade para evoluir em back-end e cloud.
+            </p>
 
-            <li class="menu__item">
-                <a class="menu__link" href="#projetos">
-                <i class="menu__icon bi bi-window"></i>
-                </a>
-                <span class="menu__text">Projetos</span>
-            </li>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projetos">Ver projetos</a>
+              <a
+                class="button button-secondary"
+                href="https://github.com/eduarda-ferr"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
 
-            <li class="menu__item">
-                <a class="menu__link" href="#contato">
-                <i class="menu__icon bi bi-envelope-at"></i>
-                </a>
-                <span class="menu__text">Contato</span>
-            </li>
-        </ul>
-    </nav>
+          <div class="hero-card" aria-label="Resumo profissional">
+            <div class="mini-tag">Java • AWS • IA</div>
+            <ul>
+              <li>Graduação em Análise e Desenvolvimento de Sistemas</li>
+              <li>AWS Certified Cloud Practitioner</li>
+              <li>Projetos em Java, web e IA aplicada</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-    
-    <main>
+      <section class="section" id="sobre">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Sobre mim</p>
+            <h3>Perfil profissional</h3>
+          </div>
 
-        <section id="home" class="main__hero">
-            <div class="main__content1">
+          <div class="about-grid">
+            <div class="about-copy">
+              <p>
+                Sou desenvolvedora em início de carreira, graduada em Análise e Desenvolvimento
+                de Sistemas pela Anhanguera e AWS Certified Cloud Practitioner. Tenho interesse em
+                desenvolvimento back-end com Java, serviços em nuvem e soluções que aplicam IA
+                para resolver tarefas reais.
+              </p>
+              <p>
+                No meu portfólio, reúno projetos de Java, aplicações web e automações com IA.
+                Valorizo código organizado, aprendizado contínuo e interfaces claras para quem
+                usa o produto.
+              </p>
+            </div>
 
-                <h1>Desenvolvimento Front-end</h1>
-                <ul class="menu--social">
-                <li>
-                    <a class="menu__link" href="https://github.com/eduarda-ferr">
-                        <i class="menu__icon bi bi-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="menu__link" href="https://www.linkedin.com/in/eduardafb/">
-                        <i class="menu__icon bi bi-linkedin"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="menu__link" href="https://www.instagram.com/e.duardafb/">
-                        <i class="menu__icon bi bi-instagram"></i>
-                    </a>
-                </li>
+            <aside class="about-panel" aria-label="Resumo rápido">
+              <h4>Foco atual</h4>
+              <ul>
+                <li>Back-end com Java</li>
+                <li>AWS e fundamentos de cloud</li>
+                <li>IA aplicada e automações</li>
+                <li>Interfaces web funcionais</li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projetos">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Projetos</p>
+            <h3>Projetos em destaque</h3>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card project-card--featured">
+              <div class="project-visual visual-ai" aria-label="Visual do projeto Classificador de E-mails com IA">
+                <span>Classificador de e-mails</span>
+              </div>
+              <div class="project-body">
+                <h4>Classificador de E-mails com IA</h4>
+                <p>
+                  Automação para triagem de mensagens e sugestão de respostas. O protótipo recebe
+                  o conteúdo de e-mails, classifica a mensagem como produtiva ou improdutiva e
+                  apresenta uma resposta sugerida para agilizar o atendimento.
+                </p>
+                <ul class="tag-list" aria-label="Tecnologias do projeto">
+                  <li>Python</li>
+                  <li>FastAPI</li>
+                  <li>scikit-learn</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
                 </ul>
+                <div class="project-actions">
+                  <a
+                    class="button button-secondary"
+                    href="https://github.com/eduarda-ferr/autoU-case"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Ver código
+                  </a>
+                  <a
+                    class="button button-primary"
+                    href="https://autou-case-3lfd.onrender.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Ver projeto
+                  </a>
+                </div>
+              </div>
+            </article>
 
-                <p>Maria Eduarda Ferreira Barbosa</p>
-                <p>Ponta de Pedras - PA</p>
-                <p>Desenvolvedor(a) Front-End Júnior | Estudante de Análise e Desenvolvimento de Sistemas</p>
+            <article class="project-card project-card--featured">
+              <div class="project-visual visual-food" aria-label="Visual do projeto HamburgueriaZ">
+                <span>HamburgueriaZ</span>
+              </div>
+              <div class="project-body">
+                <h4>HamburgueriaZ</h4>
+                <p>
+                  Aplicativo mobile para organização de pedidos e cardápio. Projeto desenvolvido em
+                  Java para praticar estruturação de telas, cadastro de produtos e fluxo de pedidos.
+                </p>
+                <ul class="tag-list" aria-label="Tecnologias do projeto">
+                  <li>Java</li>
+                  <li>Android</li>
+                  <li>XML</li>
+                </ul>
+                <div class="project-actions">
+                  <a
+                    class="button button-secondary"
+                    href="https://github.com/eduarda-ferr/HamburgueriaZ-app"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Ver código
+                  </a>
+                </div>
+              </div>
+            </article>
 
-                <!-- <button class="btn btn--primary" onclick="location.href='#projetos'">
-                    <span>Visualizar Projetos</span>
-                    <i class="bi bi-distribute-vertical"></i>
-                </button> -->
+            <article class="project-card project-card--featured">
+              <div class="project-visual visual-agents" aria-label="Visual do projeto NLW Agents">
+                <span>NLW Agents</span>
+              </div>
+              <div class="project-body">
+                <h4>NLW Agents</h4>
+                <p>
+                  Interface de assistente com inteligência artificial. Projeto prático que explora
+                  experiência responsiva no front-end e integração com a API Gemini para criação de
+                  protótipos assistidos por IA.
+                </p>
+                <ul class="tag-list" aria-label="Tecnologias do projeto">
+                  <li>JavaScript</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>API Gemini</li>
+                </ul>
+                <div class="project-actions">
+                  <a
+                    class="button button-secondary"
+                    href="https://github.com/eduarda-ferr/Trilha-NLW-Agents"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Ver código
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cloud-section" id="cloud">
+        <div class="container cloud-box">
+          <div class="section-heading section-heading--left">
+            <p class="eyebrow">Cloud</p>
+            <h3>Cloud e certificação</h3>
+          </div>
+
+          <div class="cloud-content">
+            <div class="cloud-badge">AWS Certified Cloud Practitioner</div>
+            <p>
+              Certificação voltada aos fundamentos de nuvem, segurança, precificação e serviços
+              AWS. Também realizo estudos e laboratórios práticos sobre arquitetura básica,
+              monitoramento e escalabilidade.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="tecnologias">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Tecnologias</p>
+            <h3>Competências técnicas</h3>
+          </div>
+
+          <div class="tech-grid">
+            <div class="tech-group">
+              <h4>Back-end e lógica</h4>
+              <ul>
+                <li>Java</li>
+                <li>POO</li>
+                <li>APIs REST</li>
+                <li>Python</li>
+                <li>FastAPI</li>
+              </ul>
             </div>
-        </section>
 
-        <section class="skills" aria-labelledby="skills-title">
-            <h2 id="skills-title">Principais tecnologias</h2>
-            <ul class="skills__list">
-                <li class="skills__item"><img class="skills__logo" src="./assets/skills/java.svg" alt="Java"></li>
-                <li class="skills__item"><img class="skills__logo" src="./assets/skills/html.svg" alt="HTML5"></li>
-                <li class="skills__item"><img class="skills__logo" src="./assets/skills/css3.svg" alt="CSS3"></li>
-                <li class="skills__item"><img class="skills__logo" src="./assets/skills/javascript.svg" alt="JavaScript"></li>
-            </ul>
-        </section>
-
-        <section id="sobre" class="about" aria-labelledby="about-title">
-            <div class="about__content1">
-                <img src="./assets/images/20250811_005818.jpg" alt="Maria Eduarda" class="about__photo"/>
-
-                <div class="about__description">
-                    <h2 id="about-title">Sobre Mim</h2>
-                    <p><strong>Maria Eduarda Ferreira Barbosa</strong> — Estudante de <em>Análise e Desenvolvimento de Sistemas</em>, atualmente no semestre final. Em transição para área de Front-End, e também com foco em Java Spring Boot.</p>
-
-                    <div class="descrition__buttons">
-                        <a href="./assets/mariaEduarda_dev.pdf" title="Currículo">
-                            <button class="btn btn--primary"><span>Currículo</span><i class="bi bi-link-45deg"></i></button>
-                        </a>
-                    </div>
-                    
-                    <div class="about__icons">
-                        <span> <i class="bi bi-javascript"></i> JavaScript: Básico</span>
-                        <span> <i class="bi bi-filetype-java"></i> Java: Intermediário</span>
-                        <span> <i class="bi bi-translate"></i> Inglês: Básico</span>
-                        <span> <i class="bi bi-pc-display-horizontal"></i> Informática: Avançada</span>
-                    </div>
-                </div>
+            <div class="tech-group">
+              <h4>Cloud</h4>
+              <ul>
+                <li>AWS</li>
+                <li>Fundamentos de arquitetura</li>
+                <li>Monitoramento</li>
+                <li>Escalabilidade</li>
+              </ul>
             </div>
 
-            <div class="about__content2">
-                <div class="col1">
-                    <div class="row1">
-                        <h3>Formação</h3>
-                        <h4>Análise e Desenvolvimento de Sistemas</h4>
-                        <span id="info">08/2023 - Atualmente</span>
-                        <div class="about__icons2"><i class="bi bi-building"></i><span> Faculdade: Anhanguera Educacional</span></div>
-                    </div>
-
-                    <div class="row2">
-                        <h3>Experiências</h3>
-                        <h4>Projetos acadêmicos e pessoais</h4>
-                        <p id="text__projects">Atuação em projetos voltados para front-end, integração com APIs e desenvolvimento em Java. Participação em desafios e cursos.</p>
-                        <ul id="info">
-                            <li class="about__item">Metodologias Ágeis</li>
-                            <li class="about__item">UX/UI</li>
-                            <li class="about__item">POO</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col2">
-                    <h3>Cursos</h3>
-                    <div id="accordion">
-                        <div class="accordion__item active">
-                            <button class="accordion__header">Front-end <i class="bi bi-caret-down"></i></button>
-                            <div class="accordion__body">
-                                <p>Front-end com HTML, CSS, JavaScript integrações com APIs e Git & GitHub.</p>
-                                <a href="./assets/certificado_frontEnd.pdf">
-                                     <i class="bi bi-link-45deg"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="accordion__item">
-                            <button class="accordion__header">Java Cloud Native <i class="bi bi-caret-down"></i></button>
-                            <div class="accordion__body">
-                                <p>Java com foco em Programação Orientada a Objetos, tecnologias voltadas à construção de aplicações modernas com Java, banco de dados (relacionais e NoSQL), Azure, e inteligência artificial com OpenAI.</p>
-                                <a href="./assets/certficado_javaCloud.pdf">
-                                     <i class="bi bi-link-45deg"></i>
-                                </a>
-                               
-                            </div>
-                        </div>
-
-                        <div class="accordion__item">
-                            <button class="accordion__header">Angular 13<i class="bi bi-caret-down"></i></button>
-                            <div class="accordion__body">
-                                <p>Formação prática de desenvolvimento de aplicações web através de conceitos como Arquitetura, Angular CLI, TypeScript, criação de componentes, serviços, pipes, diretivas, formulários com validação, rotas, consumo de APIs e integração com Bootstrap.</p>
-                                <a href="./assets/certificado__udemy.pdf">
-                                     <i class="bi bi-link-45deg"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="tech-group">
+              <h4>IA e automação</h4>
+              <ul>
+                <li>scikit-learn</li>
+                <li>Integração com APIs de IA</li>
+                <li>Gemini</li>
+              </ul>
             </div>
-        </section>
 
-        <section id="projetos" class="projects" aria-labelledby="projects-title">
-            <h2 id="projects-title">Projetos</h2>
-
-            <div class="projects__container">
-
-                <div class="projects__card">
-                    <img class="card__cover" src="./assets/images/img_portifólio.png" alt="NLW Agents - Assistente IA">
-                    <div class="card__body">
-                        <h3 class="card__title">Portifólio</h3>
-                        <p class="card__description">Aplicação web desenvolvida com HTML, CSS e JavaScript, com o objetivo de apresentar seus conhecimentos em desenvolvimento front-end e Java.
-</p>
-                        <ul id="info">
-                            <li>Interface responsiva</li>
-                            <li>Alternância de Tema</li>
-                            <li>Tecnologias fundamentais do front-end.</li>
-                        </ul>
-
-                        <ul class="skills__list">
-                            <li class="skills__item"><img class="skills__logo" id="logo__html" src="./assets/skills/html.svg" alt="HTML"></li>
-                            <li class="skills__item"><img class="skills__logo" src="./assets/skills/css3.svg" alt="CSS"></li>
-                            <li class="skills__item"><img class="skills__logo" id="logo__css" src="./assets/skills/javascript.svg" alt="JS"></li>
-                        </ul>
-
-                        <div class="card__buttons">
-                            <a class="btn btn--primary" href="#"><span>Prévia</span><i class="bi bi-menu-button-wide"></i></a>
-                            <a class="btn" href="https://github.com/eduarda-ferr/eduarda-ferreira-portifolio"><span>Repositório</span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="projects__card">
-                    <img class="card__cover" src="./assets/images/img_nlw.png" alt="NLW Agents - Assistente IA">
-                    <div class="card__body">
-                        <h3 class="card__title">NLW Agents - Assistente IA</h3>
-                        <p class="card__description">Assistente IA desenvolvido como desafio, integrando front-end e APIs de IA Gemini para protótipos.</p>
-                        <ul id="info">
-                            <li>Interface responsiva</li>
-                            <li>Integração com API de IA</li>
-                            <li>Deploy em ambiente público</li>
-                        </ul>
-
-                        <ul class="skills__list">
-                            <li class="skills__item"><img class="skills__logo" id="logo__html" src="./assets/skills/html.svg" alt="HTML"></li>
-                            <li class="skills__item"><img class="skills__logo" src="./assets/skills/css3.svg" alt="CSS"></li>
-                            <li class="skills__item"><img class="skills__logo" id="logo__css" src="./assets/skills/javascript.svg" alt="JS"></li>
-                            <li class="skills__item"><img class="skills__logo" src="./assets/skills/logo-ia.png" alt="IA"></li>
-                            <li class="skills__item"><img class="skills__logo" id="logo__gemini" src="./assets/skills/logo-gemini.png" alt="IA"></li>
-                        </ul>
-
-                        <div class="card__buttons">
-                            <a class="btn btn--primary" href="https://eduarda-ferr.github.io/Trilha-NLW-Agents/"><span>Prévia</span><i class="bi bi-menu-button-wide"></i></a>
-                            <a class="btn" href="https://github.com/eduarda-ferr/Trilha-NLW-Agents"><span>Repositório</span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="projects__card">
-                    <img class="card__cover" src="./assets/images/img_hamburgueriaZ.jpeg" alt="HamburgueriaZ">
-                    <div class="card__body">
-                        <h3 class="card__title">HamburgueriaZ</h3>
-                        <p class="card__description">Aplicação para gerenciamento de pedidos e cardápio — projeto com Java/Android/XML.</p>
-                        <ul id="info">
-                            <li>Cadastro de produtos</li>
-                            <li>Fluxo de pedidos</li>
-                            <li>Persistência simples</li>
-                        </ul>
-
-                        <ul class="skills__list">
-                            <li class="skills__item"><img class="skills__logo" id="logo__java" src="./assets/skills/java.svg" alt="Java"></li>
-                            <li class="skills__item"><img class="skills__logo" id="logo__xml" src="./assets/skills/logo-xml.png" alt="XML"></li>
-                            <li class="skills__item"><img class="skills__logo" id="logo__android" src="./assets/skills/logo-android.png" alt="Android"></li>
-                        </ul>
-
-                        <div class="card__buttons">
-                            <a class="btn btn--primary" href="#"><span>Prévia</span><i class="bi bi-menu-button-wide"></i></a>
-                            <a class="btn" href="https://github.com/eduarda-ferr/HamburgueriaZ-app"><span>Repositório</span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- <a href="#">
-                <button class="btn btn--primary">
-                    <span>Visualizar todos os projetos</span>
-                </button>
-                </a> -->
+            <div class="tech-group">
+              <h4>Front-end</h4>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Responsividade</li>
+              </ul>
             </div>
-        </section>
 
-        <section id="contato" class="contact" aria-labelledby="contact-title">
-            <h2 id="contact-title">Contate-me</h2>
-            <p>Disponível para serviços e novas conexões.</p>
+            <div class="tech-group">
+              <h4>Ferramentas</h4>
+              <ul>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>VS Code</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <ul class="menu menu--social">
-                <li>
-                    <a href="https://github.com/eduarda-ferr" class="menu__link">
-                        <i class="bi bi-github"></i>
-                        <span>Github</span>
-                    </a>
-                </li>
+      <section class="section more-projects-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Mais projetos</p>
+            <h3>Projetos complementares</h3>
+          </div>
 
-                <li>
-                    <a href="https://www.linkedin.com/in/eduardafb/" class="menu__link">
-                        <i class="bi bi-linkedin"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                </li>
+          <div class="secondary-projects">
+            <article class="secondary-card">
+              <h4>Portfólio pessoal</h4>
+              <p>Apresentação profissional com foco em comunicação, objetivos e projetos relevantes.</p>
+            </article>
 
-                <li>
-                    <a href="https://www.instagram.com/e.duardafb/" class="menu__link">
-                        <i class="bi bi-instagram"></i>
-                        <span>Instagram</span>
-                    </a>
-                </li>
-            </ul>
-        </section>
+            <article class="secondary-card">
+              <h4>Pokedex</h4>
+              <p>Estudo de interfaces e consumo de dados com foco em experiência do usuário.</p>
+            </article>
+
+            <article class="secondary-card">
+              <h4>Estudos Java / trilha Java Cloud</h4>
+              <p>Desafios de lógica, POO e controle de fluxo para aprofundar fundamentos em Java.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contato">
+        <div class="container contact-box">
+          <p class="eyebrow">Contato</p>
+          <h3>Vamos conversar sobre oportunidades e conexões profissionais</h3>
+
+          <div class="contact-links" aria-label="Links de contato">
+            <a href="https://github.com/eduarda-ferr" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/eduardafb" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="mailto:mariaeduardafb00@gmail.com">E-mail</a>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-        <p>@2025. Todos os Direitos Reservados. Desenvolvido por <a href="https://www.linkedin.com/in/eduardafb/">Maria Eduarda Ferreira Barbosa</a></p>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Maria Eduarda Ferreira Barbosa</p>
+      </div>
     </footer>
 
-    <script src="./assets/js/script.js"></script>
-</body>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
