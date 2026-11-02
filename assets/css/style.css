@@ -584,28 +584,24 @@ h4 {
 }
 
 .visual-ai {
-  background: linear-gradient(135deg, rgba(15, 118, 110, 0.85), rgba(45, 212, 191, 0.65)),
-    radial-gradient(circle at top left, rgba(255, 255, 255, 0.16), transparent 40%),
-    #0f172a;
+  background-image: url("../images/img_email.png");
 }
 
 .visual-aws {
-  background:
-    linear-gradient(135deg, rgba(41, 104, 139, 0.82), rgba(76, 91, 139, 0.74)),
-    radial-gradient(circle at top left, rgba(191, 225, 238, 0.12), transparent 45%),
-    #172638;
+  background-image: url("../images/img_contador.png");
 }
 
 .visual-food {
-  background: linear-gradient(135deg, rgba(249, 115, 22, 0.9), rgba(251, 191, 36, 0.7)),
-    radial-gradient(circle at top left, rgba(255, 255, 255, 0.2), transparent 40%),
-    #111827;
+  background-image: url("../images/img_hamburgueriaZ.jpeg");
+}
+
+.visual-ai span,
+.visual-food span {
+  color: #000;
 }
 
 .visual-agents {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.82), rgba(167, 139, 250, 0.6)),
-    radial-gradient(circle at top left, rgba(255, 255, 255, 0.16), transparent 40%),
-    #0f172a;
+  background-image: url("../images/img_nlw.png");
 }
 
 .visual-coffee {
